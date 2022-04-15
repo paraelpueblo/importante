@@ -38,9 +38,7 @@ jQuery(document).ready(function () {
         $this.html(event.strftime("<span>%M</span> : <span>%S</span>"));
       }
     });
-});
-
-$('a.scrollto').on('click', function() {
+    $('a.scrollto').on('click', function() {
   let href = $(this).attr('href');
   $('html, body').animate({
       scrollTop: $(href).offset().top
@@ -50,6 +48,9 @@ $('a.scrollto').on('click', function() {
   });
   return false;
 });
+});
+
+
 
 function startTimer(duration, min, sec) {
   var timer = duration,
