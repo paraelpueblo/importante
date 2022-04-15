@@ -38,7 +38,7 @@ jQuery(document).ready(function () {
         $this.html(event.strftime("<span>%M</span> : <span>%S</span>"));
       }
     });
-    $('a.scrollto').on('click', function() {
+    jQuery('a.scrollto').on('click', function() {
   let href = $(this).attr('href');
   $('html, body').animate({
       scrollTop: $(href).offset().top
