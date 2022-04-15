@@ -38,6 +38,7 @@ jQuery(document).ready(function () {
         $this.html(event.strftime("<span>%M</span> : <span>%S</span>"));
       }
     });
+// -------------TIER------------------------
     jQuery('a.scrollto').on('click', function() {
   let href = $(this).attr('href');
   $('html, body').animate({
@@ -46,6 +47,7 @@ jQuery(document).ready(function () {
       duration: 370,
       easing: "linear"
   });
+  // -------------TIER------------------------
   return false;
 });
 });
